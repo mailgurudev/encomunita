@@ -43,3 +43,20 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Flutter
+.dart_tool/
+.packages
+.pub/
+build/
+.idea/
+android/.gradle/
+ios/Pods/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melody
+.metadata
+
+# Supabase keys or secrets
+*.env
+.env*
