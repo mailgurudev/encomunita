@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
 import 'core/config/supabase_config.dart';
@@ -26,6 +27,14 @@ class EncomunitaApp extends StatelessWidget {
       title: 'Encomunita - Community Collaboration',
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown,
+        },
+      ),
       initialRoute: '/welcome',
       routes: {
         '/welcome': (context) => const WelcomeScreen(),

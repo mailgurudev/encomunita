@@ -35,4 +35,8 @@ class SupabaseConfig {
   /// Database table names
   static const String userProfilesTable = 'user_profiles';
   static const String communitiesTable = 'communities';
+  static const String eventsTable = 'events';
+  static const String eventRsvpsTable = 'event_rsvps';
+  static const String marketplaceListingsTable = 'marketplace_listings';
+  static const String marketplaceInquiriesTable = 'marketplace_inquiries';
 }
